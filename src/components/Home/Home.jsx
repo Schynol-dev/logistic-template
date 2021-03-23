@@ -12,8 +12,8 @@ function Home() {
             <div className="video-overlay"></div>
             <div className="container">
                 <div className="text-box">
-                    <h2>Welcome to Logistic</h2>
-                    <p>This is Logistic a responsive site template developed by Stela</p>
+                    <h2>Welcome to Logistics</h2>
+                    <p>This is Logistics a responsive site template developed by Stela</p>
                 </div>
             </div>
         </section>

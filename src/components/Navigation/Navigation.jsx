@@ -5,7 +5,7 @@ function Navigation() {
     return (
         <div id="navigation">
             <div className="logo">
-                <h3>Logistic</h3>
+                <h3>Logistics</h3>
             </div>
             <div className="list">
                 <ul>
