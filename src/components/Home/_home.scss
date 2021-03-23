@@ -1,0 +1,36 @@
+#home {
+    height: 100vh;
+    @include vendor('display', 'flex');
+    @include vendor('align-items', 'center');
+
+    > video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    > .video-overlay {
+        background: #000;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
+    > .container > .text-box {
+        color: _palette(fg-alt);
+        width: 60%;
+
+        > h2 {
+            padding-bottom: 0.5em;
+            border-bottom: solid 3px _palette(border);
+        }
+    }
+}

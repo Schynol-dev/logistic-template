@@ -66,7 +66,7 @@
 
 	a {
 		@include vendor('transition', 'color #{_duration(transition)} ease-in-out');
-		color: _palette(nav, fg);
+		color: _palette(fg-alt);
 	}
 
 	sub {

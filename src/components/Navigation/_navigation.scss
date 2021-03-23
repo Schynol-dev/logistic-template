@@ -13,7 +13,7 @@
         
         > h3 {
             position: absolute;
-            color: _palette(nav, fg);
+            color: _palette(fg-alt);
             left: 1em;
             top: 0;
             line-height: 2.5em;
@@ -44,7 +44,7 @@
 
                 &:hover {
                     a {
-                        color: lighten(_palette(nav, fg), 20);
+                        color: darken(_palette(fg-alt), 20);
                     }
                 }
             }
