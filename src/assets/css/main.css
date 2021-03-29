@@ -470,7 +470,7 @@ p, ul, ol, dl, table {
   color: #f9f7f7;
   left: 1em;
   top: 0;
-  line-height: 2.5em;
+  line-height: 3em;
 }
 
 #navigation > .list {
@@ -604,5 +604,115 @@ p, ul, ol, dl, table {
 
 #about > .container > .box.founders > .text {
   padding: 0 0 0 0.75em;
+}
+
+#contact > .container > .form {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 1.5em 0;
+}
+
+#contact > .container > .form > .field {
+  -moz-flex-grow: 0;
+  -ms-flex-grow: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 100%;
+  margin: 0 0 1em 0;
+}
+
+#contact > .container > .form > .field.half {
+  width: calc(50% - 0.5em);
+  margin-left: 1em;
+}
+
+#contact > .container > .form > .field.half:first-child {
+  margin-left: 0;
+}
+
+input[type="text"], input[type="email"], textarea {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #f9f7f7;
+  display: block;
+  width: 100%;
+  padding: 0.65em 0.75em;
+  background: none;
+  border: solid 2px white;
+  border-radius: 0.5em;
+  outline: none;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border-color: #dbe2ef;
+}
+
+textarea {
+  min-height: 16em;
+}
+
+button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #f9f7f7;
+  border: 0;
+  border-radius: 0.5em;
+  color: #39454b;
+  cursor: pointer;
+  display: inline-block;
+  height: 3.5em;
+  line-height: 3.5em;
+  outline: 0;
+  padding: 0 5em 0 5em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.75em;
+  font-family: "Raleway", "sans-serif";
+}
+
+button:hover {
+  background-color: #eee8e8;
+}
+
+button:active {
+  background-color: #e3dada;
+}
+
+::-webkit-input-placeholder {
+  color: #f9f7f7;
+  opacity: 0.4;
+}
+
+:-ms-input-placeholder {
+  color: #f9f7f7;
+  opacity: 0.4;
+}
+
+::-ms-input-placeholder {
+  color: #f9f7f7;
+  opacity: 0.4;
+}
+
+::placeholder {
+  color: #f9f7f7;
+  opacity: 0.4;
 }
 /*# sourceMappingURL=main.css.map */

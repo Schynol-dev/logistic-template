@@ -1,0 +1,82 @@
+#contact {
+
+    > .container {
+
+        > .form {
+            @include vendor('display', 'flex');
+            @include vendor('flex-wrap', 'wrap');
+            padding: 1.5em 0;
+
+            > .field {
+                $space: 1em;
+                @include vendor('flex-grow', '0');
+                @include vendor('flex-shrink', '0');
+                width: 100%;
+                margin: 0 0 $space 0;
+
+                &.half {
+                    width: calc(50% - #{$space/2});
+                    margin-left: $space;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+input[type="text"], input[type="email"], textarea {
+    @include vendor('appearance', 'none');
+    @include vendor('transition', ('border-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out'));
+    color: _palette(fg-alt);
+    display: block;
+    width: 100%;
+    padding: 0.65em 0.75em;
+    background: none;
+    border: solid 2px lighten(_palette(accent, bg), 20);
+    border-radius: 0.5em;
+    outline: none;
+
+    &:focus {
+        border-color: _palette(accent, bg);
+    }
+}
+
+textarea {
+    min-height: 16em;
+}
+
+button {
+    @include vendor('appearance', 'none');
+	@include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
+    background-color: _palette(bg);
+    border: 0;
+    border-radius: 0.5em;
+    color: _palette(fg);
+    cursor: pointer;
+    display: inline-block;
+    height: 3.5em;
+    line-height: 3.5em;
+    outline: 0;
+    padding: 0 5em 0 5em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-family: _font(family);
+
+    &:hover {
+        background-color: darken(_palette(bg), 5);
+    }
+
+    &:active {
+        background-color: darken(_palette(bg), 10);
+    }
+}
+
+::placeholder {
+    color: _palette(fg-alt);
+    opacity: 0.4;
+}
