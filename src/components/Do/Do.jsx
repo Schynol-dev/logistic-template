@@ -1,5 +1,12 @@
 import React from "react";
 
+import Box from "./components/Box";
+
+import truck from "../../assets/images/truck_edit.jpg";
+import cargo from "../../assets/images/cargo.jpg";
+import plane from "../../assets/images/plane.jpg";
+import freight from "../../assets/images/freight-train.jpg";
+
 function Do() {
 
     return (
@@ -7,32 +14,16 @@ function Do() {
             <div className="container">
                 <div className="boxes">
                     <div className="box">
-                        <div className="image"></div>
-                        <div className="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa obcaecati inventore temporibus et delectus officia quaerat ex possimus magni quam commodi,
-                            blanditiis nam aperiam qui fugiat repellendus iusto tempora voluptas!</p>
-                        </div>
+                        <Box background={truck} />
                     </div>
                     <div className="box">
-                        <div className="image"></div>
-                        <div className="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa obcaecati inventore temporibus et delectus officia quaerat ex possimus magni quam commodi,
-                            blanditiis nam aperiam qui fugiat repellendus iusto tempora voluptas!</p>
-                        </div>
+                        <Box background={cargo} />
                     </div> 
                     <div className="box">
-                        <div className="image"></div>
-                        <div className="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa obcaecati inventore temporibus et delectus officia quaerat ex possimus magni quam commodi,
-                            blanditiis nam aperiam qui fugiat repellendus iusto tempora voluptas!</p>
-                        </div>
+                        <Box background={plane} />
                     </div> 
                     <div className="box">
-                        <div className="image"></div>
-                        <div className="text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa obcaecati inventore temporibus et delectus officia quaerat ex possimus magni quam commodi,
-                            blanditiis nam aperiam qui fugiat repellendus iusto tempora voluptas!</p>
-                        </div>
+                        <Box background={freight} /> 
                     </div>     
                 </div>
             </div>

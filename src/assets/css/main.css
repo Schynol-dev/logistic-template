@@ -567,7 +567,6 @@ p, ul, ol, dl, table {
 }
 
 #do > .container > .boxes > .box > .image {
-  background-image: url("../../assets/images/truck_edit.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
