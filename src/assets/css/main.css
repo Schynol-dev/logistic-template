@@ -366,11 +366,18 @@ p, ul, ol, dl, table {
 }
 
 @media screen and (max-width: 736px) {
+  #navigation {
+    border-bottom: none;
+    height: 0;
+  }
   #navigation > .logo {
     display: none;
   }
   #navigation > .list {
     left: 1em;
+  }
+  #navigation > .list > ul > li {
+    margin-left: 0;
   }
 }
 
