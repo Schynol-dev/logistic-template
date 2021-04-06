@@ -664,6 +664,13 @@ p, ul, ol, dl, table {
   margin-left: 0;
 }
 
+@media screen and (max-width: 736px) {
+  #contact > .container > .form > .field.half {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
 input[type="text"], input[type="email"], textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
