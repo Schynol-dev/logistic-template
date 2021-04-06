@@ -28,6 +28,10 @@
         color: _palette(fg-alt);
         width: 60%;
 
+        @include breakpoint('<=xxsmall') {
+            margin-left: 1em;
+        }
+
         > h2 {
             padding-bottom: 0.5em;
             border-bottom: solid 3px _palette(border);

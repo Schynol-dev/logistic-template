@@ -422,6 +422,12 @@ p, ul, ol, dl, table {
   width: 60%;
 }
 
+@media screen and (max-width: 360px) {
+  #home > .container > .text-box {
+    margin-left: 1em;
+  }
+}
+
 #home > .container > .text-box > h2 {
   padding-bottom: 0.5em;
   border-bottom: solid 3px #fff;
@@ -504,6 +510,12 @@ p, ul, ol, dl, table {
   }
   #about > .container > .box.founders > .text {
     margin-top: 1.5em;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #contact > .container > p, #contact h2 {
+    text-align: center;
   }
 }
 

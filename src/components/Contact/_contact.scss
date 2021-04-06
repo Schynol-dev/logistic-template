@@ -1,5 +1,11 @@
 #contact {
 
+    @include breakpoint('<=xxsmall') {
+        > .container > p, h2 {
+            text-align: center;
+        }
+    }
+
     > .container {
 
         > .form {
