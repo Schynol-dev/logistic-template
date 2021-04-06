@@ -50,4 +50,15 @@
             }
         }
     }
+
+    @include breakpoint('<=small') {
+        
+        > .logo {
+            display: none;
+        }
+
+        > .list {
+            left: 1em;
+        }
+    }
 }

@@ -499,6 +499,15 @@ p, ul, ol, dl, table {
   color: #cdbdbd;
 }
 
+@media screen and (max-width: 736px) {
+  #navigation > .logo {
+    display: none;
+  }
+  #navigation > .list {
+    left: 1em;
+  }
+}
+
 #home {
   height: 100vh;
   display: -moz-flex;
