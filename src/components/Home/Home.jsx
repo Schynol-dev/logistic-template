@@ -13,7 +13,7 @@ function Home() {
             <div className="container">
                 <div className="text-box">
                     <h2>Welcome to Logistics</h2>
-                    <p>This is Logistics a responsive site template developed by Stela</p>
+                    <p>This is Logistics a responsive site template developed by <a href="http://kamilschynol.com/" target="_blank" rel="noreferrer">Kamil Schynol</a></p>
                 </div>
             </div>
         </section>
