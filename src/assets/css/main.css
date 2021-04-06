@@ -585,6 +585,13 @@ p, ul, ol, dl, table {
   min-width: 40%;
 }
 
+@media screen and (max-width: 980px) {
+  #do > .container > .boxes > .box {
+    width: 100%;
+    margin: 0.5em 0;
+  }
+}
+
 #about > .container > .box {
   background: #fff;
   padding: 1.5em 1em;

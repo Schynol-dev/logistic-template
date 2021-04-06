@@ -21,4 +21,15 @@
             }
         }
     }
+
+    @include breakpoint('<=medium') {
+        
+        > .container > .boxes {
+
+            > .box {
+                width: 100%;
+                margin: 0.5em 0;
+            }
+        }
+    }
 }
