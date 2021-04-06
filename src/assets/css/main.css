@@ -621,6 +621,16 @@ p, ul, ol, dl, table {
   padding: 0 0 0 0.75em;
 }
 
+@media screen and (max-width: 980px) {
+  #about > .container > .box.founders {
+    display: block;
+  }
+  #about > .container > .box.founders > .image {
+    min-width: 100%;
+    min-height: 20em;
+  }
+}
+
 #contact > .container > .form {
   display: -moz-flex;
   display: -ms-flex;

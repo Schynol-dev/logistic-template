@@ -26,6 +26,18 @@
                 }
 
             }
+
+            @include breakpoint('<=medium') {
+        
+                &.founders {
+                    display: block;
+
+                    > .image {
+                        min-width: 100%;
+                        min-height: 20em;  
+                    }
+                }
+            }
         }
     }
 }
